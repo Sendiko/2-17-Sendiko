@@ -14,7 +14,7 @@ use App\http\Controllers\ContactController;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home', [
         "title" => "Home"
     ]);
