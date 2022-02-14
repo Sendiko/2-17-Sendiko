@@ -13,6 +13,7 @@ class CreateContactsTable extends Migration
      */
     public function up()
     {
+        //! Koneksi ke Database
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
