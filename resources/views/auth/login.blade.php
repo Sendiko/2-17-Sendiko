@@ -2,9 +2,9 @@
 <html lang="en">
 
   <head>
-    
-      @include('partials/meta')
 
+      @include('partials/meta')
+      
       <!-- Title Page-->
       <title>Login</title>
 

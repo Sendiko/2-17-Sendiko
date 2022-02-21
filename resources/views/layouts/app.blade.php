@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    
+      <!-- META TAGS -->
       @include('partials/meta')
 
       <!-- Title Page-->
