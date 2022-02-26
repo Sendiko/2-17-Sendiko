@@ -21,11 +21,11 @@
           @include('partials/mobileheader')
           <!-- PAGE CONTAINER-->
           <div class="page-container">
-            <!-- HEADER -->
-              @include('partials/header')
-            <!-- MAIN CONTENT-->
-              @yield('content')
-          </div
+          <!-- HEADER -->
+          @include('partials/header')
+          <!-- MAIN CONTENT-->
+          @yield('content')
+          </div>
 
       </div>
       @include('partials/script');
