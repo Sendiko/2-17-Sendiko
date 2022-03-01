@@ -14,7 +14,7 @@ use App\http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index', [
         "title" => "Beranda"
     ]);
