@@ -16,7 +16,7 @@
                                 <div class="info clearfix">
                                     <div class="image">
                                         <a href="#">
-                                            <img src="{{asset('admin/images/icon/avatar-01.jpg')}}" alt="{{Auth::user()->name}}" />
+                                            <img src="{{asset('admin/images/icon/dsc.jpg')}}" alt="{{Auth::user()->name}}" />
                                         </a>
                                     </div>
                                     <div class="content">
@@ -27,14 +27,14 @@
                                     </div>
                                 </div>
                                 <div class="account-dropdown__footer">
-                                  <a class="dropdown-item" href="{{ route('logout') }}"
-                                     onclick="event.preventDefault();
-                                                   document.getElementById('logout-form').submit();">
-                                      {{ __('Logout') }}
-                                  </a>
-                                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                      @csrf
-                                  </form>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
                                 </div>
                             </div>
                         </div>
