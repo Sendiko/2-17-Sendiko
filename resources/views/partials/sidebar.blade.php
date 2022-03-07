@@ -13,22 +13,22 @@
                         <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                <a href="index.blade.php">Home</a>
+                                <a href="index.blade.php">Dashboard</a>
                             </li>
                             <li>
-                                <a href="about.blade.php">About</a>
+                                <a href="about.blade.php">Dash 2</a>
                               </li>
                               <li>
-                                <a href="gallery.blade.php">Gallery</a>
+                                <a href="gallery.blade.php">Dash 3</a>
                               </li>
                               <li>
-                                <a href="contact.blade.php">Contact Us</a>
+                                <a href="contact.blade.php">Dash 4</a>
                               </li>
                         </ul>
                 </li>
                 <li>
-                    <a href="chart.html">
-                        <i class="fas fa-chart-bar"></i>Charts</a>
+                    <a href="{{route('contacts.index')}}">
+                        <i class="fas fa-chart-bar"></i>Data Contact Us</a>
                 </li>
                 <li>
                     <a href="table.html">
