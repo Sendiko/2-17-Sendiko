@@ -28,19 +28,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                              <?php foreach ($contacts as $index => $contact): ?>
+                            <?php foreach ($contacts as $index => $contact): ?>
                                 <tr>
-                                  <td>{{ $index + 1}}</td>
-                                  <td>{{ $contact ->nama}}</td>
-                                  <td>{{ $contact ->email}}</td>
-                                  <td>{{ $contact ->pesan}}</td>
-                                  <td>
+                                <td>{{ $index + 1}}</td>
+                                <td>{{ $contact ->nama}}</td>
+                                <td>{{ $contact ->email}}</td>
+                                <td>{{ $contact ->pesan}}</td>
+                                <td>
                                     <a href="{{route('contacts.edit', $contact -> id )}}"><i class="fas fa-edit"></i></a>
-                                      |
+                                    |
                                     <a href="{{route('contacts.destroy', $contact -> id )}}"><i class="fas fa-trash" style="color:red"></i></a>
-                                  </td>
+                                </td>
                                 </tr>
-                              <?php endforeach; ?>
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                         {{$contacts -> links()}}
