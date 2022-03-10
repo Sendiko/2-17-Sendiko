@@ -6,14 +6,14 @@
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-6">
+            <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
                         <strong>Form Edit</strong> Contact Us
                     </div>
                     <div class="card-body card-block">
                         <form action="{{route('contacts.update', $contact-> id)}}" method="post" class="">
-                          {{csrf_field()}}
+                            {{csrf_field()}}
                             <div class="form-group">
                                 <label for="nf-email" class=" form-control-label">Nama</label>
                                 <input type="text" name="nama" class="form-control" value="{{$contact->nama}}">
@@ -34,7 +34,7 @@
                         </form>
                     </div>
                 </div>
-              </div>
+            </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
