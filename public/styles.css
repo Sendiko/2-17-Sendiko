@@ -1,0 +1,12 @@
+h1, h3, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
