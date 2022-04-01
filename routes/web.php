@@ -23,15 +23,19 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
-        "nama" => "Sendiko",
+        "nama" => "Muhammad Rizky Sendiko",
         "email" => "3103120150@student.smktelkom-pwt.sch.id",
-        "gambar" => "dsc.jpg"
+        "gambar" => "dsc.jpg",
+        "sekolah" => "SMK Telkom Puwokerto",
+        "umur" => "17 Tahun",
+        "kelahiran" => "Banyumas, Purwokerto"
     ]);
 });
 
-Route::get('/gallery', function () {
-    return view('gallery', [
-        "title" => "Gallery"
+Route::get('/porto', function () {
+    return view('portofolio', [
+        "title" => "Gallery",
+        "gambar" => "dsc.jpg"
     ]);
 });
 
