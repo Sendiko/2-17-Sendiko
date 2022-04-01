@@ -13,16 +13,16 @@
                         <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                <a href="index.blade.php">Dashboard</a>
+                                <a href="/index">Dashboard</a>
                             </li>
                             <li>
-                                <a href="about.blade.php">Dash 2</a>
+                                <a href="/about">Dash 2</a>
                             </li>
                             <li>
-                                <a href="gallery.blade.php">Dash 3</a>
+                                <a href="/porto">Dash 3</a>
                             </li>
                             <li>
-                                <a href="contact.blade.php">Dash 4</a>
+                                <a href="/contact">Dash 4</a>
                             </li>
                         </ul>
                 </li>
@@ -30,7 +30,7 @@
                     <a href="{{route('contacts.index')}}">
                         <i class="fas fa-chart-bar"></i>Data Contact Us</a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="table.html">
                         <i class="fas fa-table"></i>Tables</a>
                 </li>
@@ -45,8 +45,8 @@
                 <li>
                     <a href="map.html">
                         <i class="fas fa-map-marker-alt"></i>Maps</a>
-                </li>
-                <li class="has-sub">
+                </li> --}}
+                {{-- <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-copy"></i>Pages</a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -60,7 +60,7 @@
                             <a href="forget-pass.html">Forget Password</a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
         </nav>
     </div>
