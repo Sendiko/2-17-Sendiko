@@ -21,6 +21,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    max-width: 32rem;
+    /* border-radius: 1rem; */
 }
 
 #identitas-diri{
@@ -39,6 +41,8 @@ header{
 }
 
 #cardd{
+    /* height: 56rem;
+    margin: 1rem; */
     border-style: solid;
     border-radius: 0.5rem;
     border-color: skyblue;

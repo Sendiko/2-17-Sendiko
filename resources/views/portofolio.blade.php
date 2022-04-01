@@ -6,7 +6,7 @@
     </header>
     <div id="port-cont">
         <div class="card" style="width: 32.6rem" id="cardd">
-            <img src="images/{{$HW}}" class="card-img-top p-1 m-1" alt="Homework Manager" id="pp">
+            <img src="images/{{$HW}}" class="card-img-top p-1 pe-1 m-1" alt="Homework Manager" id="pp">
             <div class="card-body">
                 <h5>Homework Manager - Kotlin</h5>
                 <p>Aplikasi Homework Manager ini adalah aplikasi Android yang saya buat menggunakan Kotlin. <br>
