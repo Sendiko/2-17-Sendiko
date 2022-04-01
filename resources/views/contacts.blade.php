@@ -1,10 +1,10 @@
 @extends('layouts.main')
-
+    {{-- <link rel="stylesheet" href="{{asset('public/admin/contact.css')}}"> --}}
 @section('container')
-    <div class="title top mb-5">
-        <h2 class="fw bold">Contact Us</h2>
+    <div class="title top mb-5" style="font-family: 'Permanent Marker', cursive; display : flex; justify-content : center; align-items : center;">
+        <h2 class="fw bold">Contact Me</h2>
     </div>
-    <form method="post" action="{{route('contacts.store')}}">
+    <form method="post" action="{{route('contacts.store')}}" style="font-family: 'Rubik', sans-serif;">
         {{csrf_field()}}
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="inputname" placeholder="Nama" name="nama">

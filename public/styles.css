@@ -20,6 +20,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #identitas-diri{
@@ -31,3 +32,16 @@ header{
     font-family: 'Rubik', sans-serif;
 }
 
+#pp{
+    max-width: 32rem;
+    max-height: 18rem;
+    padding: 0;
+}
+
+#port-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
