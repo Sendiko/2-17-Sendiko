@@ -38,6 +38,13 @@ header{
     padding: 0;
 }
 
+#cardd{
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: skyblue;
+    text-align: justify;
+}
+
 #port-cont{
     display: flex;
     flex-direction: column;

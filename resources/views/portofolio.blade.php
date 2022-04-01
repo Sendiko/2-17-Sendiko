@@ -5,7 +5,7 @@
         <h1>Portofolio Saya</h>
     </header>
     <div id="port-cont">
-        <div class="card" style="width: 32rem" id="cardd">
+        <div class="card" style="width: 32.6rem" id="cardd">
             <img src="images/{{$HW}}" class="card-img-top p-1 m-1" alt="Homework Manager" id="pp">
             <div class="card-body">
                 <h5>Homework Manager - Kotlin</h5>
@@ -19,7 +19,8 @@
                    Berikut adalah Link githubnya : <a href="https://github.com/Sendiko/Homework-Manager">Sendiko/Homework-Manager</a></p>
             </div>
         </div>
-        <div class="card" style="width: 32rem" id="cardd">
+        <br>
+        <div class="card" style="width: 32.6rem" id="cardd">
             <img src="images/{{$tfe}}" class="card-img-top p-1 m-1" alt="2048" id="pp">
             <div class="card-body">
                 <h5>Clone 2048</h5>
@@ -30,7 +31,8 @@
                    Dan berikut adalah Link githubnya : <a href="https://github.com/Sendiko/2048">Sendiko/2048</a></p>
             </div>
         </div>
-        <div class="card" style="width: 32rem" id="cardd">
+        <br>
+        <div class="card" style="width: 32.6rem" id="cardd">
             <img src="images/{{$todo}}" class="card-img-top p-1  m-1" alt="Todo List with Javascript" id="pp">
             <div class="card-body">
                 <h5>Todo List Web App with Javascript</h5>
@@ -40,15 +42,17 @@
                    Dan saya merasa sudah cukup puas dengan pengetahuan saya tentang Javascript sekarang. <br>
                    Berikut adalah Link githubnya : <a href="https://github.com/Sendiko/Todo-Javascript">Sendiko/Todo-Javascript</a></p>
             </div>
-        <div class="card" style="width: 32rem" id="cardd">
+        </div>
+        <br>
+        <div class="card" style="width: 32.6rem" id="cardd">
             <img src="images/{{$lara}}" class="card-img-top p-1 m-1" alt="Web App with Laravel 8" id="pp">
             <div class="card-body">
                 <h5>Laravel 8 Web App</h5>
-                <p>Project ini adalah pertama kalinya saya menggunakan sebuah Framework. <br>
-                   Untuk Web ini, saya menggnunakan Framework Laravel 8, dibantu dengan Framework CSS, Bootstrap. <br>
-                   Fitur di Web ini sedikit mirip dengan Homework-Manager saya, yaitu CRUD database. <br>
-                   Tentu saja, database yang saya gunakan kali ini adalah MySQL. Data yang akan masuk ke database adalah data dari Contact Me. <br>
-                   Lalu, ada juga fitur authorization. Fitur ini bisa bisa digunakan lewat tombol Login dam register di kanan atas Website ini. <br>
+                <p>Project ini adalah pertama kalinya saya menggunakan sebuah Framework.
+                   Untuk Web ini, saya menggnunakan Framework Laravel 8, dibantu dengan Framework CSS, Bootstrap. 
+                   Fitur di Web ini sedikit mirip dengan Homework-Manager saya, yaitu CRUD database. 
+                   Tentu saja, database yang saya gunakan kali ini adalah MySQL. Data yang akan masuk ke database adalah data dari Contact Me. 
+                   Lalu, ada juga fitur authorization. Fitur ini bisa bisa digunakan lewat tombol Login dam register di kanan atas Website ini.
                    Dan setelah Log in, maka user akan dibawa ke Dashboard Utama. Dari Dashboardtersebut, saya bisa mengolah data Contact Me yang sudah dimasukkan. <br>
                    Berikut adalah Link github dari Website ini : <a href="https://github.com/Sendiko/2-17-Sendiko">Sendiko/Laravel 8</a></p>
             </div>
