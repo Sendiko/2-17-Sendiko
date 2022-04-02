@@ -16,7 +16,7 @@
                    3. Sort data <br>
                    4. Search data <br>
                    5. UI yang mudah digunakan <br>
-                   Berikut adalah Link githubnya : <a href="https://github.com/Sendiko/Homework-Manager">Sendiko/Homework-Manager</a></p>
+                   Berikut adalah Link githubnya : <a class="card-link" href="https://github.com/Sendiko/Homework-Manager">Sendiko/Homework-Manager</a></p>
             </div>
         </div>
         <br>
@@ -55,6 +55,16 @@
                    Lalu, ada juga fitur authorization. Fitur ini bisa bisa digunakan lewat tombol Login dam register di kanan atas Website ini.
                    Dan setelah Log in, maka user akan dibawa ke Dashboard Utama. Dari Dashboardtersebut, saya bisa mengolah data Contact Me yang sudah dimasukkan. <br>
                    Berikut adalah Link github dari Website ini : <a href="https://github.com/Sendiko/2-17-Sendiko">Sendiko/Laravel 8</a></p>
+            </div>
+        </div>
+        <div class="card" style="width: 32.6rem" id="cardd">
+            <img src="images/{{$calc}}" class="card-img-top p-1 m-1" alt="Web App with Laravel 8" id="pp">
+            <div class="card-body">
+                <h5>Calculator App C#</h5>
+                <p>Simple desktop calculator app with C# <br>
+                    Aplikasi ini saya buat menggunakan Visual Studio 2022 dengan bahasa C#. Ini adalah latihan bagi saya untuk membuat GUI di aplikasi Desktop. <br>
+                    Ternyata tidak sesulit yang saya bayangkan, rasanya hampir mirip dengan membut UI di Aplikasi Android. <br>
+                    Berikut adalah Link github dari project ini : <a href="https://github.com/Sendiko/CalcApp-with-C-">Sendiko/Calculator-C#</a></p>
             </div>
         </div>
     </div>

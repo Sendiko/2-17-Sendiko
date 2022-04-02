@@ -40,7 +40,8 @@ Route::get('/porto', function () {
         "todo" => "todo.png",
         "tfe" => "2048.png",
         "HW" => "HW.png",
-        "lara" => "laravel.png"
+        "lara" => "laravel.png",
+        "calc" => "calc.png"
     ]);
 });
 
