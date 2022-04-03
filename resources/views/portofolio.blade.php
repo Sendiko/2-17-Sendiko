@@ -5,7 +5,7 @@
         <h1>Portofolio Saya</h>
     </header>
     <div id="port-cont">
-        <div class="card" style="width: 32.6rem" id="cardd">
+        <div class="card" id="cardd">
             <img src="images/{{$HW}}" class="card-img-top p-1 pe-1 m-1" alt="Homework Manager" id="pp">
             <div class="card-body">
                 <h5>Homework Manager - Kotlin</h5>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <br>
-        <div class="card" style="width: 32.6rem" id="cardd">
+        <div class="card" id="cardd">
             <img src="images/{{$tfe}}" class="card-img-top p-1 m-1" alt="2048" id="pp">
             <div class="card-body">
                 <h5>Clone 2048</h5>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <br>
-        <div class="card" style="width: 32.6rem" id="cardd">
+        <div class="card" id="cardd">
             <img src="images/{{$todo}}" class="card-img-top p-1  m-1" alt="Todo List with Javascript" id="pp">
             <div class="card-body">
                 <h5>Todo List Web App with Javascript</h5>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <br>
-        <div class="card" style="width: 32.6rem" id="cardd">
+        <div class="card" id="cardd">
             <img src="images/{{$lara}}" class="card-img-top p-1 m-1" alt="Web App with Laravel 8" id="pp">
             <div class="card-body">
                 <h5>Laravel 8 Web App</h5>
@@ -57,7 +57,7 @@
                    Berikut adalah Link github dari Website ini : <a href="https://github.com/Sendiko/2-17-Sendiko">Sendiko/Laravel 8</a></p>
             </div>
         </div>
-        <div class="card" style="width: 32.6rem" id="cardd">
+        <div class="card" id="cardd">
             <img src="images/{{$calc}}" class="card-img-top p-1 m-1" alt="Web App with Laravel 8" id="pp">
             <div class="card-body">
                 <h5>Calculator App C#</h5>

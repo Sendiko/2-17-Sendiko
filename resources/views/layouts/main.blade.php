@@ -13,7 +13,7 @@
     <body>
     @include('partials.navbar')
 
-        <div class="container mt-4">
+        <div class="container-fluid" id="container">
             @yield('container')
         </div>
 
