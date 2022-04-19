@@ -28,14 +28,23 @@ Route::get('/about', function () {
         "gambar" => "dsc.jpg",
         "sekolah" => "SMK Telkom Puwokerto",
         "umur" => "17 Tahun",
-        "kelahiran" => "Banyumas, Purwokerto"
+        "kelahiran" => "Banyumas, Purwokerto",
+        "hobi" => "Mencoba Project-project dari Youtube, Bermain Games(CoC, MLBB), Mendengarkan musik"
     ]);
 });
 
 Route::get('/porto', function () {
     return view('portofolio', [
         "title" => "Gallery",
-        "gambar" => "dsc.jpg"
+        "gambar" => "dsc.jpg",
+        "title" => "Portofolio",
+        "gambar" => "dsc.jpg",
+        "todo" => "todo.png",
+        "tfe" => "2048.png",
+        "HW" => "HW.png",
+        "lara" => "laravel.png",
+        "calc" => "calc.png",
+        "fire" => "firebase.png"
     ]);
 });
 
