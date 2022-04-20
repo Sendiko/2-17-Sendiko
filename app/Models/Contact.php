@@ -11,3 +11,4 @@ class Contact extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['id', 'nama', 'email', 'pesan'];
 }
+?>
