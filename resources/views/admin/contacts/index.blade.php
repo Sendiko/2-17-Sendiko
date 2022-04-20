@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <div class="overview-wrap">
                         <h2 class="title-1">Data Contact Us</h2>
-                        <a href="contact" class="btn btn-primary">+ ADD</a>
+                        <a href="/contacts/create" class="btn btn-primary">+</a>
                     </div>
                 </div>
             </div>

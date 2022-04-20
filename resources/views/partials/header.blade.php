@@ -5,7 +5,7 @@
             <div class="header-wrap">
                 <div class="header-button">
                     <div class="account-wrap">
-                        <div class="account-item clearfix js-item-menu">
+                        <div class="account-item clearfix js-item-menu align-items-end">
                             <div class="image">
                                 <img src="{{asset('admin/images/icon/dsc.jpg')}}" alt="{{Auth::user()->name}}" />
                             </div>
