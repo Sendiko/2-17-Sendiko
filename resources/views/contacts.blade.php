@@ -1,5 +1,5 @@
 @extends('layouts.main')
-
+<link rel="stylesheet" href="styles.css">
 @section('container')
     <div class="title top mb-5">
         <h2 class="fw bold">Contact Us</h2>
