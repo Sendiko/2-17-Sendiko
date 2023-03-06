@@ -4,8 +4,6 @@ use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HomeController;
-use App\Models\Book;
 
 /*
 |--------------------------------------------------------------------------
