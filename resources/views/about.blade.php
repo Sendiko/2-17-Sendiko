@@ -9,7 +9,7 @@
         <div id="image">
             <img src="images/{{$gambar}}" alt="{{$nama}}" width="200px">
         </div>
-        <p>Nama Lengkap : {{$nama}} <br>
+        <p class="mt-5">Nama Lengkap : {{$nama}} <br>
             Umur : {{$umur}} <br>
             Asal : {{$kelahiran}} <br>
             Sedang menempuh pendidikan di : {{$sekolah}} <br>
