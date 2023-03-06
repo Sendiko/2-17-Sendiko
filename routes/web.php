@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
+use App\Models\Book;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,33 +24,9 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/about', function () {
-    return view('about', [
-        "title" => "About",
-        "nama" => "Muhammad Rizky Sendiko",
-        "email" => "3103120150@student.smktelkom-pwt.sch.id",
-        "gambar" => "dsc.jpg",
-        "sekolah" => "SMK Telkom Puwokerto",
-        "umur" => "17 Tahun",
-        "kelahiran" => "Banyumas, Purwokerto",
-        "hobi" => "Mencoba Project-project dari Youtube, Bermain Games(CoC, MLBB), Mendengarkan musik"
-    ]);
-});
+Route::get('/about', [DashboardController::class, 'about']);
 
-Route::get('/porto', function () {
-    return view('portofolio', [
-        "title" => "Gallery",
-        "gambar" => "dsc.jpg",
-        "title" => "Portofolio",
-        "gambar" => "dsc.jpg",
-        "todo" => "todo.png",
-        "tfe" => "2048.png",
-        "HW" => "HW.png",
-        "lara" => "laravel.png",
-        "calc" => "calc.png",
-        "fire" => "firebase.png"
-    ]);
-});
+Route::get('/porto', [DashboardController::class, 'portofolio']);
 
 Route::get('/contacts', function () {
     return view('contacts', [
@@ -56,6 +36,8 @@ Route::get('/contacts', function () {
 
 Route::get('/contacts/create', [ContactController::class, 'create'])->name('contacts.create');
 Route::post('/contacts/store', [ContactController::class, 'store'])->name('contacts.store');
+Route::get('/books/index', [BookController::class, 'index'])->name('books.index'); 
+Route::get('/book/{id}/show', [BookController::class, 'show'])->name('book.show');
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function(){
@@ -64,4 +46,13 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/contacts/{id}/edit', [ContactController::class, 'edit'])->name('contacts.edit');
     Route::post('/contacts/{id}/update', [ContactController::class, 'update'])->name('contacts.update');
     Route::get('/contacts/{id}/destroy', [ContactController::class, 'destroy'])->name('contacts.destroy');
+
+    // Book routes
+    Route::get('/book/create', [BookController::class, 'create'])->name('book.create');
+    Route::post('/book/store', [BookController::class, 'store'])->name('book.store');
+    Route::get('/book/{id}/edit', [BookController::class, 'edit'])->name('book.edit');
+    Route::get('/books/admin/index', [BookController::class, 'adminIndex'])->name('books.admin.index'); 
+    Route::get('/book/admin/{id}/show', [BookController::class, 'adminShow'])->name('book.admin.show');
+    Route::post('/book/{id}/update', [BookController::class, 'update'])->name('book.update');
+    Route::get('/book/{id}/destroy', [BookController::class, 'destroy'])->name('book.destroy');
 });
