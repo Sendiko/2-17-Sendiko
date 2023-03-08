@@ -98,8 +98,27 @@ class BookController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $validated = $request->validate([
+            'title' => 'string',
+            'writer' => 'string',
+            'publisher' => 'string',
+            'synopsis' => 'string',
+            'release' => 'numeric',
+            'cover' => 'image|file'
+        ]);
+
         $book = Book::findOrFail($id);
-        $book->update($request->all());
+
+        $cover = $request->file('cover')->store('cover');
+        $book->update([
+            'title' => $validated['title'],
+            'writer' => $validated['writer'],
+            'publisher' => $validated['publisher'],
+            'synopsis' => $validated['synopsis'],
+            'release' => $validated['release'],
+            'cover' => $cover
+        ]);
         $book->save();
         return redirect()->route('books.admin.index')->with('status', 'Data updated!');
     }
