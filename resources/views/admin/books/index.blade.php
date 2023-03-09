@@ -37,7 +37,7 @@
                                         <td>{{ $book -> publisher}}</td>
                                         <td>
                                             @if($book->cover)
-                                            <img src="{{ asset('storage/'.$book->cover) }}" alt="{{$book->title}}" style="max-height: 100px;">
+                                            <img src="{{ asset('storage/'.$book->cover) }}" alt="{{$book->title}}" class="img-fluid w-50">
                                             @else
                                             No Image
                                             @endif
