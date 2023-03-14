@@ -28,7 +28,7 @@
                             </div>
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary btn-sm">
-                                <i class="fa-solid fa-pen-to-square"></i> Ubah
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>
                             </div>
                         </form>
