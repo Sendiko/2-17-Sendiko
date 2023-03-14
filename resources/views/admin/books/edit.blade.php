@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="cover_image">Cover Image</label>
-                                    <input type="file" class="form-control-file" id="cover_image" name="cover" value="{{ asset('storage/'.$book->cover) }}">
+                                    <input type="file" class="form-control-file" id="cover_image" name="cover" value="{{ $cover }}">
                                 </div>
                                 <div class="form-group">
                                     <label for="nf-password" class=" form-control-label">Sinopsis</label>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-dot-circle-o"></i> Ubah
+                                    <i class="fa-solid fa-pen-to-square"></i> Ubah
                                     </button>
                                 </div>
                             </form>

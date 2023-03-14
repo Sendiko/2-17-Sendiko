@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class BookController extends Controller
 {
@@ -86,7 +87,8 @@ class BookController extends Controller
     public function edit($id)
     {
         $book = Book::findOrFail($id);
-        return view('admin/books/edit', compact('book'));
+        $cover = Storage::get($book->cover);
+        return view('admin/books/edit', compact(['book', 'cover']));
     }
 
     /**
