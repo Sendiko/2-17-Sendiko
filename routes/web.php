@@ -36,11 +36,12 @@ Route::get('/contacts', function () {
 
 Route::get('/contacts/create', [ContactController::class, 'create'])->name('contacts.create');
 Route::post('/contacts/store', [ContactController::class, 'store'])->name('contacts.store');
-Route::get('/books/index', [BookController::class, 'index'])->name('books.index'); 
+Route::get('/books/index', [BookController::class, 'index'])->name('books.index');
 Route::get('/book/{id}/show', [BookController::class, 'show'])->name('book.show');
+Route::post('/books/search', [BookController::class, 'searchBook'])->name('book.search');
 Auth::routes();
 
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/contacts/index', [ContactController::class, 'index'])->name('contacts.index');
     Route::get('/contacts/{id}/edit', [ContactController::class, 'edit'])->name('contacts.edit');
@@ -51,8 +52,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/book/create', [BookController::class, 'create'])->name('book.create');
     Route::post('/book/store', [BookController::class, 'store'])->name('book.store');
     Route::get('/book/{id}/edit', [BookController::class, 'edit'])->name('book.edit');
-    Route::get('/books/admin/index', [BookController::class, 'adminIndex'])->name('books.admin.index'); 
+    Route::get('/books/admin/index', [BookController::class, 'adminIndex'])->name('books.admin.index');
     Route::get('/book/admin/{id}/show', [BookController::class, 'adminShow'])->name('book.admin.show');
     Route::post('/book/{id}/update', [BookController::class, 'update'])->name('book.update');
     Route::get('/book/{id}/destroy', [BookController::class, 'destroy'])->name('book.destroy');
+    Route::post('/books/admin/search', [BookController::class, 'searchBookAdmin'])->name('book.admin.search');
+    Route::get('/books/export', [BookController::class, 'exportToExcel'])->name('books.export');
 });

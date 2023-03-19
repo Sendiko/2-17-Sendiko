@@ -1,6 +1,11 @@
 @extends('layouts.main')
 <link rel="stylesheet" href="styles.css">
 @section('container')
+<form action="{{ route('book.search') }}" method="POST" class="d-flex flex-direction-row">
+    @csrf
+    <input type="text" name="search" class="form-control w-100 me-2" value="{{isset($query) ? $query : ''}}">
+    <button type="submit" class="btn btn-info">Search</button>
+</form>
 <div class="table-responsive mt-lg-5">
     <table class="table mt-lg-5">
         <thead class="thead-dark">
@@ -30,6 +35,5 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    {{$books -> links()}}
 </div>
 @endsection

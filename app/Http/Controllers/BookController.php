@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\BooksExport;
 use App\Http\Controllers\Controller;
 use App\Models\Book;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
 
 class BookController extends Controller
 {
@@ -107,19 +110,25 @@ class BookController extends Controller
             'publisher' => 'string',
             'synopsis' => 'string',
             'release' => 'numeric',
-            'cover' => 'image|file'
+            'cover' => 'image|file|nullable'
         ]);
 
         $book = Book::findOrFail($id);
 
-        $cover = $request->file('cover')->store('cover');
+        if ($request->hasFile('cover')) {
+            $cover = $request->file('cover');
+            $name = time() . '_' . $cover->getClientOriginalName();
+            $file = public_path('storage/cover');
+            $cover->move($file, $name);
+            $book->cover = $name;
+        }
+
         $book->update([
             'title' => $validated['title'],
             'writer' => $validated['writer'],
             'publisher' => $validated['publisher'],
             'synopsis' => $validated['synopsis'],
             'release' => $validated['release'],
-            'cover' => $cover
         ]);
         $book->save();
         return redirect()->route('books.admin.index')->with('status', 'Data updated!');
@@ -155,4 +164,27 @@ class BookController extends Controller
         ]);
     }
 
+    public function searchBook(Request $request)
+    {
+        $query = $request->search;
+        $books = Book::where('title', 'like', '%' . $query . '%')->orWhere('writer', 'like', '%' . $query . '%')->orWhere('publisher', 'like', '%' . $query . '%')->orWhere('release', 'like', '%' . $query . '%')->get();
+        return view('books/index', compact('books'), [
+            'title' => "Books"
+        ]);
+    }
+
+    public function searchBookAdmin(Request $request)
+    {
+        $query = $request->search;
+        $books = Book::where('title', 'like', '%' . $query . '%')->orWhere('writer', 'like', '%' . $query . '%')->orWhere('publisher', 'like', '%' . $query . '%')->orWhere('release', 'like', '%' . $query . '%')->get();
+        $books = Book::paginate(5);
+        return view('admin/books/index', compact('books'), [
+            'title' => "Books"
+        ]);
+    }
+
+    public function exportToExcel()
+    {
+        return Excel::download(new BooksExport(), 'Books report ' . now() . '.xlsx');
+    }
 }
